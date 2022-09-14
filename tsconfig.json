@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "esModuleInterop": true,
+        "rootDir": "./源代码/原始的源代码/typescript",
+        "outDir": "./源代码/发布的源代码/javascript",
+        "declaration": false
+    },
+    "include": [
+        "./源代码/原始的源代码"
+    ]
+}
