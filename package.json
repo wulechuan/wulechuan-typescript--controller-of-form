@@ -13,19 +13,19 @@
         "node": ">=14.16"
     },
     "exports": {
-        ".": "./源代码/发布的源代码/javascript/index.js",
+        ".": "./源代码/编译出的源代码/javascript/index.js",
         "./源代码/原始的源代码/typescript/*": "./源代码/原始的源代码/typescript/*",
-        "./源代码/发布的源代码/*": "./源代码/发布的源代码/*"
+        "./源代码/编译出的源代码/*": "./源代码/编译出的源代码/*"
     },
-    "main": "./源代码/发布的源代码/javascript/index.js",
+    "main": "./源代码/编译出的源代码/javascript/index.js",
     "types": "./源代码/原始的源代码/types/index.d.ts",
     "directories": {
         "source": "源代码/原始的源代码",
-        "dist": "源代码/发布的源代码",
+        "dist": "源代码/编译出的源代码",
         "doc": "文档集"
     },
     "scripts": {
-        "构建所有须发布的文件": "tsc",
+        "构建所有须发布的文件": "rimraf  ./源代码/编译出的源代码    &&    tsc",
         "每当制作集得之版本之前": "npm  i    &&    npm  run  构建所有须发布的文件",
         "start": "tsc  -w",
         "prepublishOnly": "npm  run  构建所有须发布的文件"
